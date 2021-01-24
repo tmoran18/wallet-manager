@@ -1,4 +1,4 @@
-# My Wallet App Installation
+# Wallet Manager Installation
 
 ```bash
 git clone https://github.com/tmoran18/wallet-manager.git

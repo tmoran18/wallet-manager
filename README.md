@@ -1,70 +1,37 @@
-# Getting Started with Create React App
+# My Wallet App Installation
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+```bash
+git clone https://github.com/tmoran18/wallet-manager.git
+cd my-wallet
+yarn install
+yarn start
+```
 
-## Available Scripts
+## Approach / Reasonings
 
-In the project directory, you can run:
+The DoseMe repositories style of writing React and inclusion of TypeScript threw me off a little at first.<br>I am confident I could pick both up, but time was a factor. Instead I used Create React App, and coded in my current React style using hooks. I used Context API also, but ended up with very little global state. The app does not currently persist user data.
 
-### `yarn start`
+My first objective was to get an idea of what the data structure would look like.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<img src="public/transaction_model.png">
+<br>
+<br>
+I then started on the add transaction component. I decided to keep the business logic with the component to save having to pass props around.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+I decided to go with a form style to add/update transactions. I probably spent a little longer than I would have liked on the form. Controlled inputs<br>can be a little tedious. I hadn't had to deal with controlled selects & options dropdowns yet so that was interesting. If doing a bigger project I think reaching for a library such as formik would be<br>advantageous.
 
-### `yarn test`
+I believe I met 4 out of the 5 User stories. Deleting all transactions for a specific currency was the one I did not get around to.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Challenges / What could be done better
+- The Add Transaction / Update Transaction components share logic & code. If I had time this would be refactored / abstracted away.
+- The UI is very basic - would be refined. A real App would be much more than just a list.
+- My CSS needs refactoring. I just did what I needed to meet the time-frame.
+- The group by currency function/UI does currently sort the currency, but I would visually group these in a better way once I could come up with a better solution.
+- I had to research Stackoverflow a bit to find an array sort function that would work for me. I have referenced the user/page in the code comments.
+<br>
+<br>
+<img src="public/wallet_manager.jpg" width=600>
 
-### `yarn build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

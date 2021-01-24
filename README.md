@@ -2,7 +2,7 @@
 
 ```bash
 git clone https://github.com/tmoran18/wallet-manager.git
-cd my-wallet
+cd wallet-manager
 yarn install
 yarn start
 ```

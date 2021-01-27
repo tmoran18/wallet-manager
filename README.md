@@ -30,7 +30,7 @@ I believe I met 4 out of the 5 User stories. Deleting all transactions for a spe
 - I had to research Stackoverflow a bit to find an array sort function that would work for me. I have referenced the user/page in the code comments.
 <br>
 <br>
-<img src="public/wallet_manager.jpg" width=600>
+<img src="public/wallet_manager.JPG" width=600>
 
 
 

@@ -16,7 +16,7 @@ My first objective was to get an idea of what the data structure would look like
 <img src="public/transaction_model.png">
 <br>
 <br>
-I then started on the add transaction component. I decided to keep the business logic with the component to save having to pass props around.
+I then started on the add transaction component. I decided to keep the business logic with the component to save having to pass props around.<br>
 
 I decided to go with a form style to add/update transactions. I probably spent a little longer than I would have liked on the form. Controlled inputs can be a little tedious. I hadn't had to deal with controlled selects & options dropdowns yet so that was interesting. If doing a bigger project I think reaching for a library such as formik would be advantageous.
 
